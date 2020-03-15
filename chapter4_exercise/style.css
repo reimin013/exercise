@@ -16,7 +16,7 @@
   background-color: red;
 }
 
-.upper-area{
+.main-visual{
   width: 100%;
   height: 500px;
   background-color: orange;
@@ -24,15 +24,28 @@
 
 .main{
   width: 960px;
-  background-color: palegreen;
+  background-color: green;
   margin: 0 auto;
-  padding: 0 230px;
 }
 
-.main-front{
+.sidebar-left{
+  width: 230px;
+  height: 1400px;
+  background-color: palegreen;
+  float: left;
+}
+
+.blog{
   width: 500px;
   height: 1400px;
   background-color: limegreen;
+  float: left;
+}
+
+.sidebar-right{
+  width: 230px;
+  height: 1400px;
+  background-color: palegreen;
   float: left;
 }
 
