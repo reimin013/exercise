@@ -11,12 +11,27 @@
 }
 
 header{
+  width: 100%;
   text-align: center;
+  margin: 0 auto;
+}
+
+.headline{
+  width: 100%;
+  display: inline-block;
+  margin: 20px auto;
+  font-size: 32px;
+}
+
+.list{
+  width: 100%;
+  border-top: 1px solid #848282;
+  border-bottom: 1px solid #848282;
 }
 
 .list-item{
-  display: inline-block;
-  padding: 15px 20px;
+  padding: 20px;
+  text-align: center;
 }
 
 .main{
@@ -128,6 +143,7 @@ header{
 }
 
 footer{
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   line-height: 120px;
