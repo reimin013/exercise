@@ -10,41 +10,51 @@
   clear: both;
 }
 
+  /*width: 100%;*/
+  /*margin: 0 auto; を padding に変更*/
+  /*margin ではなく padding を使う*/
 header{
-  width: 100%;
   text-align: center;
-  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.headline{
+header .headline{
   width: 100%;
-  display: inline-block;
-  margin: 20px auto;
+  /*もともとあった　display: inline-block;を削除*/
+  /*margin: 20px auto;を削除*/
   font-size: 32px;
 }
 
 .list{
-  width: 100%;
   border-top: 1px solid #848282;
   border-bottom: 1px solid #848282;
+  /*②中央寄せのcssを追加するとnavエリアの文字が中央寄せになった*/
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
+
+  /*padding: 20px 0;を削除*/
+  /*text-align: center;を削除*/
+  /*①display: inline-block; を追加すると、header とその他がずれる*/
 .list-item{
-  padding: 20px;
-  text-align: center;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
 }
 
+/*text-align: center;を削除*/
 .main{
-  width: 100%;
+  width: 800px;
   margin: 50px auto;
-  text-align: center;
 }
 
-.main-visual-top{
+/*.main-visual-top{
   width: 800px;
   height: 200px;
   margin: 0 auto;
-}
+}を削除*/
 
 .green1{
   width: 200px;
@@ -74,11 +84,11 @@ header{
   float: left;
 }
 
-.main-visual-middle{
+/*.main-visual-middle{
   width: 800px;
   height: 200px;
   margin: 0 auto;
-}
+  }を削除*/
 
 .yellow1{
   width: 200px;
@@ -108,11 +118,11 @@ header{
   float: left;
 }
 
-.main-visual-bottom{
+/*.main-visual-bottom{
   width: 800px;
   height: 200px;
   margin: 0 auto;
-}
+}を削除*/
 
 .blue1{
   width: 200px;
@@ -144,13 +154,14 @@ header{
 
 footer{
   width: 100%;
-  text-align: center;
-  margin: 0 auto;
+  height: 120px;
   line-height: 120px;
   text-align: center;
   background-color: #848282;
 }
+/*height: 120px;を追加*/
+/*margin: 0 auto;を削除*/
 
 .footer-text{
-  color: white;
+  color: #fff;
 }
